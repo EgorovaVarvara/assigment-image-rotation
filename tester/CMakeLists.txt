@@ -4,7 +4,8 @@ file(GLOB_RECURSE sources CONFIGURE_DEPENDS
     include/*.h
 )
 
-add_executable(image-matcher ${sources})
+add_executable(image-matcher ${sources}
+        ../solution/include/image.h)
 target_include_directories(image-matcher PRIVATE src include)
 
 file(GLOB test_directories CONFIGURE_DEPENDS tests/*)

@@ -12,7 +12,7 @@ struct image {
     struct pixel* data;
 };
 
-struct image* create_image(uint64_t width, uint64_t height);
+struct image create_image(uint64_t width, uint64_t height);
 void destroy_image(struct image* img);
 
 

@@ -11,13 +11,15 @@ enum read_status {
     READ_INVALID_HEADER
 };
 
-enum read_status from_bmp(FILE* in, struct image* img);
-
 enum write_status {
     WRITE_OK = 0,
     WRITE_ERROR
 };
 
-enum write_status to_bmp(FILE* out, struct image const* img);
+enum write_status write_to_bmp(FILE* in, struct image* img);
+
+
+
+enum read_status read_from_bmp(FILE* out, struct image* img);
 
 #endif

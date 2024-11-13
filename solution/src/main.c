@@ -1,7 +1,17 @@
 #include <stdio.h>
 
 int main( int argc, char** argv ) {
-    (void) argc; (void) argv; // supress 'unused parameters' warning
+    /* логика:
+     * считали аргументы
+     * отвалидировали
+     *
+     * считали bmp файл
+     * преобразовали в struct image
+     *
+     * повернули
+     *
+     * записали new_image в bmp файл
+     */
 
     return 0;
 }

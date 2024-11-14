@@ -2,7 +2,8 @@
 #include "input-output.h"
 
 uint32_t count_padding(struct image* img){
-    return ((img->width * sizeof(struct pixel))%4);
+    uint32_t row_size = img->width * sizeof(struct pixel);
+    return (4 - (row_size % 4)) % 4;
 }
 
 enum read_status read_from_bmp(FILE* input, struct image* img){

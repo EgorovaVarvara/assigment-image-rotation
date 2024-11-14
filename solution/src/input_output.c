@@ -1,6 +1,5 @@
 #include "bmp.h"
 #include "input-output.h"
-#include "image.c"
 
 uint32_t count_padding(struct image* img){
     return ((img->width * sizeof(struct pixel))%4);

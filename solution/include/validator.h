@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdint.h>
+#include <stdbool.h>
 
 enum status{
     OK = 0,
@@ -14,7 +15,8 @@ enum status{
 struct args{
     FILE* input;
     FILE* output;
-    int16_t angle;
+    int64_t angle;
+    bool valid;
 };
 
 struct args read_args(char** args);

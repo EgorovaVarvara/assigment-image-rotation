@@ -8,11 +8,11 @@ add_executable(image-transformer ${sources}
         include/input-output.h
         include/bmp.h
         include/rotation.h
-        include/validator.h
+        include/util.h
         src/input_output.c
         src/image.c
         src/bmp.c
-        src/validator.c
+        src/util.c
         src/rotation.c
         include/image.h)
 target_include_directories(image-transformer PRIVATE src include)

@@ -1,6 +1,6 @@
 #include "rotation.h"
 
-struct image rotate(struct image* old, int64_t angle){
+struct image rotate(struct image* old){
     struct image new = create_image(old->height, old->width);
 
     for (uint64_t x = 0; x < old->width; x++){
